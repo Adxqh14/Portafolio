@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adriel Parache — MountainDev</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>
+  (function(){
+    var saved = localStorage.getItem('theme');
+    var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    var theme = saved || (prefersDark ? 'dark' : 'light');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+</head>
+<body>
+
+<div class="topo-field" aria-hidden="true">
+  <svg viewBox="0 0 1600 900" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+    <path d="M-40,120 C220,60 380,160 560,90 C760,15 900,120 1120,60 C1300,10 1450,80 1640,40"/>
+    <path d="M-40,180 C230,120 390,220 570,150 C770,75 910,180 1130,120 C1310,70 1460,140 1640,100"/>
+    <path class="accent-line" d="M-40,240 C240,175 400,280 580,205 C780,130 920,235 1140,175 C1320,125 1470,195 1640,155"/>
+    <path d="M-40,300 C250,235 410,335 590,260 C790,185 930,290 1150,230 C1330,180 1480,250 1640,210"/>
+    <path d="M-40,420 C230,370 360,460 540,400 C730,335 860,430 1080,370 C1270,320 1430,400 1640,350"/>
+    <path class="accent-line" d="M-40,470 C240,415 370,510 550,450 C740,385 870,480 1090,420 C1280,370 1440,450 1640,400"/>
+    <path d="M-40,520 C250,460 380,555 560,495 C750,430 880,525 1100,465 C1290,415 1450,495 1640,450"/>
+    <path d="M-40,560 C260,505 390,595 570,535 C760,470 890,560 1110,505 C1300,455 1460,530 1640,490"/>
+    <path class="accent-line" d="M-40,680 C220,630 350,720 530,660 C720,600 850,690 1070,635 C1260,590 1430,660 1640,620"/>
+    <path d="M-40,730 C230,680 360,770 540,710 C730,650 860,740 1080,685 C1270,640 1440,705 1640,670"/>
+    <path d="M-40,790 C240,740 380,825 560,765 C750,705 890,795 1110,740 C1300,695 1460,760 1640,725"/>
+    <path class="accent-line" d="M-40,850 C250,800 390,880 570,825 C760,770 900,850 1120,800 C1310,755 1470,815 1640,785"/>
+  </svg>
+</div>
+
+<header>
+  <div class="wrap nav">
+    <div class="brand">Adriel Parache <em>· MountainDev</em></div>
+    <nav class="nav-links">
+      <a href="#about">Sobre mí</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#contacto">Contacto</a>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar tema">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8Z"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Portafolio — desarrollo de software</p>
+    <h1>Construyo interfaces claras <span class="accent">y productos que funcionan.</span></h1>
+    <p class="lede">Soy Adriel Parache, desarrollador bajo la marca MountainDev. Diseño y construyo aplicaciones de escritorio, web y sistemas de gestión con foco en la experiencia del usuario final.</p>
+    <div class="hero-actions">
+      <a href="#proyectos" class="btn primary">Ver proyectos</a>
+      <a href="#contacto" class="btn ghost">Contactar</a>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap about-grid">
+    <div>
+      <div class="about-header">
+        <img class="portrait" src="assets/images/adriel-parache.png" alt="Adriel Parache">
+        <h2>Sobre mí</h2>
+      </div>
+      <p style="margin-top:24px;">Trabajo tanto en proyectos propios como en equipo, cubriendo desde la interfaz hasta el empaquetado final de la aplicación. Me interesa que lo que construyo se pueda usar de verdad: instaladores que funcionan, flujos que no confunden al usuario, pantallas que comunican antes de explicar.</p>
+      <p>Actualmente desarrollo bajo la marca <strong>MountainDev</strong>, habiendo participado también en proyectos institucionales de mayor escala trabajando en equipo.</p>
+    </div>
+    <div>
+      <h3 style="font-size:1.1rem; margin-bottom:6px;">Con qué trabajo</h3>
+      <div class="stack-list">
+        <span class="tag">React</span>
+        <span class="tag">TypeScript</span>
+        <span class="tag">Next.js</span>
+        <span class="tag">Electron</span>
+        <span class="tag">Tailwind CSS</span>
+        <span class="tag">Vite</span>
+        <span class="tag">Extensiones de navegador</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="proyectos">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Proyectos</h2>
+      <span class="num">03 seleccionados</span>
+    </div>
+
+    <div class="project">
+      <div class="project-visual">
+        <img src="assets/images/plavet-logo.png" alt="Logo de Plavet">
+      </div>
+      <div class="project-body">
+        <h3>Plavet</h3>
+        <span class="project-role">Frontend developer — Proyecto colaborativo</span>
+        <p>Sistema integral de gestión de pasantías y empleabilidad que conecta estudiantes, instituciones educativas y centros de trabajo en una sola plataforma, con paneles diferenciados por rol. Disponible en versión web y móvil.</p>
+        <ul class="feature-grid">
+          <li>Dashboards por rol: admin, estudiante, supervisor, tutores y vinculador</li>
+          <li>Gestión de estudiantes, centros de trabajo y plazas</li>
+          <li>Seguimiento de pasantías: visitas, asistencias y evaluaciones</li>
+          <li>Generación de reportes y documentos en PDF</li>
+        </ul>
+        <div class="stack-list">
+          <span class="tag">React</span>
+          <span class="tag">TypeScript</span>
+          <span class="tag">Vite</span>
+          <span class="tag">Tailwind CSS</span>
+          <span class="tag">Versión móvil</span>
+        </div>
+      </div>
+      <div class="project-preview">
+        <div class="preview-frame">
+          <div class="preview-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            plavet-mobile.vercel.app
+          </div>
+          <iframe src="https://plavet-mobile.vercel.app/" loading="lazy" title="Vista previa en vivo de Plavet"></iframe>
+        </div>
+        <a class="preview-link" href="https://plavet-mobile.vercel.app/" target="_blank" rel="noopener">Abrir demo en vivo ↗</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-visual">
+        <img src="assets/images/mediadownloader-logo.png" alt="Logo de MediaDownloader">
+      </div>
+      <div class="project-body">
+        <h3>MediaDownloader</h3>
+        <span class="project-role">Proyecto propio — MountainDev</span>
+        <p>Aplicación de escritorio para descarga de contenido multimedia, distribuida como instalador real de Electron y acompañada de una extensión de navegador, elaborada como proyecto sin fines económicos.</p>
+        <ul class="feature-grid">
+          <li>App de escritorio empaquetada con instalador</li>
+          <li>Extensión de navegador complementaria</li>
+          <li>Proyecto elaborado sin fines económicos</li>
+        </ul>
+        <div class="stack-list">
+          <span class="tag">Next.js</span>
+          <span class="tag">Electron</span>
+          <span class="tag">Extensión de navegador</span>
+        </div>
+      </div>
+      <div class="project-preview">
+        <div class="preview-frame">
+          <div class="preview-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            media-downloader-hazel.vercel.app
+          </div>
+          <iframe src="https://media-downloader-hazel.vercel.app/" loading="lazy" title="Vista previa en vivo de MediaDownloader"></iframe>
+        </div>
+        <a class="preview-link" href="https://media-downloader-hazel.vercel.app/" target="_blank" rel="noopener">Abrir demo en vivo ↗</a>
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-visual">
+        <img src="assets/images/infografia-logo.svg" alt="Infografía interactiva Poema de la Madre Tierra">
+      </div>
+      <div class="project-body">
+        <h3>Poema de la Madre Tierra</h3>
+        <span class="project-role">Trabajo académico — infografía interactiva</span>
+        <p>Infografía literaria interactiva sobre el poema de Germán Pardo García, elaborada como trabajo de análisis de la obra y su relación con la desigualdad educativa en la clase trabajadora. Construida con v0.</p>
+        <ul class="feature-grid">
+          <li>Navegación por secciones: contexto, problemática, análisis e interpretación</li>
+          <li>Línea de tiempo del autor y recursos literarios destacados</li>
+          <li>Diseño interactivo pensado para lectura y exploración</li>
+        </ul>
+        <div class="stack-list">
+          <span class="tag">v0</span>
+          <span class="tag">Next.js</span>
+        </div>
+      </div>
+      <div class="project-preview">
+        <div class="preview-frame">
+          <div class="preview-bar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            v0-interactive-infographic-design-gamma.vercel.app
+          </div>
+          <iframe src="https://v0-interactive-infographic-design-gamma.vercel.app/" loading="lazy" title="Vista previa en vivo de la infografía"></iframe>
+        </div>
+        <a class="preview-link" href="https://v0-interactive-infographic-design-gamma.vercel.app/" target="_blank" rel="noopener">Abrir demo en vivo ↗</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="wrap contact">
+    <h2>¿Tienes un proyecto en mente? Hablemos.</h2>
+    <div class="contact-links">
+      <a href="mailto:adrielprch17@gmail.com">adrielprch17@gmail.com</a>
+      <a href="https://www.linkedin.com/in/adriel-parache-1557b8385" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Adxqh14" target="_blank">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap" style="display:flex; justify-content:space-between; width:100%;">
+    <span>MountainDev — Adriel Parache</span>
+    <span>© 2026</span>
+  </div>
+</footer>
+
+<script>
+  var toggle = document.getElementById('themeToggle');
+  toggle.addEventListener('click', function(){
+    var current = document.documentElement.getAttribute('data-theme');
+    var next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  });
+</script>
+
+</body>
+</html>
